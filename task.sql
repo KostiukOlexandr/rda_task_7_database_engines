@@ -21,14 +21,14 @@ CREATE TABLE ProductDescription (
     Description TEXT,
     CountryID INT,
     PRIMARY KEY (ID)
-) ENGINE=InnoDB;
+) ENGINE=MyISAM;
 
 CREATE TABLE Logs (
     ID INT,
     Timestamp DATETIME,
     Message TEXT,
     PRIMARY KEY (ID)
-) ENGINE=Blackhole;
+) ENGINE=BLACKHOLE;
 
 CREATE TABLE ProductReporting (
     Date DATE NOT NULL,
